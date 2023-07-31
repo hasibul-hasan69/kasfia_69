@@ -46,6 +46,24 @@
                 I want to say:<br>
                 Baby, I love you in Every Universe;<br>
             </span></span></span></span></span></span></div>
+            <div class="container">
+                <h1>Do you love me? ;)</h1>
+                <button>yes</button>
+                <button>no!</button>
+
+                
+            </div>
+
+    
+
+
+
+
+
+
+
+
+
             <div id="loveHeart">
                 <canvas id="garden" width="670" height="625"></canvas>
                 <div id="words">
@@ -91,6 +109,33 @@
                 adjustCodePosition();
                 $("#code").typewriter();
             }
+
+
+
+
+
+
+
+            var x = 1;
+var dz = document.getElementsByTagName("button");
+dz[1].onmouseover = function(){
+	if(x == 1){
+		dz[1].style.left = "100px";
+		x++;
+	}else if(x == 2){
+		dz[1].style.top = "250px";
+		x++;
+	}else{
+		x = 1;
+		dz[1].style.top = "58px";
+		dz[1].style.left = "300px";
+	}
+}
+
+dz[0].onclick = function(){
+	alert("Of course you doooo, like I'm forcing you n_n 3:) ")
+}
+
         </script>
     </div>
 </body>
